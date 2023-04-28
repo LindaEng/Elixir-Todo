@@ -1,0 +1,19 @@
+4/28/23
+
+start elixir interactive shell:
+iex -s mix <- starts an interactive shell
+
+recompile -> to recompile and reload any changes made to the code
+
+_ -> if not using or else we get an error
+
+Enum.member?(list, item_of_interest)
+Enum.take_random(list, number_of_random)
+
+creating lists in the interactive shell:
+    for i <- 1..n will create a list from 1 to n
+    [1,2,...,n]
+
+    filters 
+    - in the interactive shell, import Integer
+    for i <- 1..30, Integer.is_even(i), do: i
