@@ -48,4 +48,11 @@ defmodule Todos do
     [task] = Enum.take_random(tasks, 1)
     task
   end
+
+  def save(tasks, filename) do
+    # invokeing erlang code
+    # converting our list so it can be written to our file system
+    binary = :erlang.term_to_binary(tasks)
+    File.write(filename, binary)
+  end
 end
